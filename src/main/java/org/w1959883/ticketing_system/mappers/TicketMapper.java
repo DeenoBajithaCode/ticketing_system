@@ -11,8 +11,8 @@ public interface TicketMapper
 {
     TicketMapper INSTANCE = Mappers.getMapper( TicketMapper.class );
 
-    @Mapping( target = "vendorId", ignore = true )
-    Ticket toTicket( TicketDto vendorDto );
+    @Mapping( target = "ticketId", ignore = true )
+    Ticket toTicket( TicketDto ticketDto );
 
-    TicketDto toTicketDTO( Ticket vendor );
+    TicketDto toTicketDTO( Ticket ticket );
 }
