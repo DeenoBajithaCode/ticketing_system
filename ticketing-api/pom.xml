@@ -62,6 +62,11 @@
             <artifactId>mapstruct-processor</artifactId>
             <version>1.6.0.Beta2</version>
         </dependency>
+        <dependency>
+            <groupId>org.w1959883</groupId>
+            <artifactId>ticketing-common</artifactId>
+            <version>0.0.1</version>
+        </dependency>
     </dependencies>
 
     <build>
