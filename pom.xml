@@ -15,6 +15,7 @@
     <modules>
         <module>ticketing-api</module>
         <module>ticketing-cli</module>
+        <module>ticketing-common</module>
     </modules>
 
     <name>TicketingSystem</name>
