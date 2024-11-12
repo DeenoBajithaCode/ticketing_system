@@ -1,1 +1,4 @@
-{"threadPoolSize":2,"numberOfThreads":3}
+{
+  "threadPoolSize": 2,
+  "numberOfThreads": 3
+}
