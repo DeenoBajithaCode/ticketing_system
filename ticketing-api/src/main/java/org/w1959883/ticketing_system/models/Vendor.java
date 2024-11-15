@@ -2,17 +2,10 @@ package org.w1959883.ticketing_system.models;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
 
 @Entity
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
-public class Vendor
+public class Vendor extends com.w1959883.models.Vendor
 {
     @Id
     private Long vendorId;
-    private String vendorName;
 }

@@ -7,12 +7,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
-public class Customer
+public class Customer extends com.w1959883.models.Customer
 {
     @Id
     private Long customerId;
-    private String customerName;
 }
