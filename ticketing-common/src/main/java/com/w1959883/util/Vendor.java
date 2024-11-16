@@ -1,14 +1,16 @@
 package com.w1959883.util;
 
 import com.w1959883.models.Ticket;
+import org.slf4j.Logger;
 
 import java.util.concurrent.BlockingQueue;
 
-public class Producer implements Runnable {
-    private final BlockingQueue<Ticket> queue;
+public class Vendor implements Runnable {
+    private static final Logger logger = TicketingLogger.getLogger();
+    private final BlockingQueue<Ticket> ticketPool;
 
-    public Producer(BlockingQueue<Ticket> queue) {
-        this.queue = queue;
+    public Vendor( BlockingQueue<Ticket> ticketPool ) {
+        this.ticketPool = ticketPool;
     }
 
     @Override
@@ -16,13 +18,13 @@ public class Producer implements Runnable {
         try {
             for (int i = 1; i <= 10; i++) {
                 Ticket item = new Ticket();
-                queue.put( item );
-                System.out.println("Produced: " + item);
+                ticketPool.put( item );
+                logger.info( "\"Produced: \" + item" );
                 Thread.sleep(500); // Simulate production time
             }
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
-            System.err.println("Producer interrupted");
+            logger.error( "Producer interrupted" );
         }
     }
 }

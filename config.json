@@ -1,4 +1,4 @@
 {
-  "threadPoolSize": 2,
+  "threadPoolSize": 100,
   "numberOfThreads": 3
 }

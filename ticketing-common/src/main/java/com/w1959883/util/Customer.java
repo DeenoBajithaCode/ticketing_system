@@ -1,22 +1,24 @@
 package com.w1959883.util;
 
 import com.w1959883.models.Ticket;
+import org.slf4j.Logger;
 
 import java.util.concurrent.BlockingQueue;
 
-public class Consumer implements Runnable {
-    private final BlockingQueue<Ticket> queue;
+public class Customer implements Runnable {
+    private static final Logger logger = TicketingLogger.getLogger();
+    private final BlockingQueue<Ticket> ticketPool;
 
-    public Consumer(BlockingQueue<Ticket> queue) {
-        this.queue = queue;
+    public Customer( BlockingQueue<Ticket> ticketPool ) {
+        this.ticketPool = ticketPool;
     }
 
     @Override
     public void run() {
         try {
             while (true) {
-                String item = queue.take().toString();
-                System.out.println("Consumed: " + item);
+                ticketPool.take();
+                Thread.sleep(1000);
             }
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
