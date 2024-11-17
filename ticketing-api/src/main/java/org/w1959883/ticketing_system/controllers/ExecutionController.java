@@ -1,5 +1,6 @@
 package org.w1959883.ticketing_system.controllers;
 
+import com.w1959883.models.Configuration;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -19,7 +20,11 @@ public class ExecutionController
     @PostMapping
     private void setProjectStatus( Boolean executionRequest )
     {
-        executionService.setProjectStatus( executionRequest );
+        executionService.setExecution( executionRequest );
     }
 
+    @PostMapping("/add")
+    private void addTicket( Configuration configuration ){
+        executionService.addConfiguration(configuration);
+    }
 }

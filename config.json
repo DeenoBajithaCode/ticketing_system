@@ -1,4 +1,1 @@
-{
-  "threadPoolSize": 100,
-  "numberOfThreads": 3
-}
+{"totalNumberOfTickets":10,"ticketReleaseRate":10.0,"customerRetrievalRate":10.0,"maximumTicketCapacity":10}
