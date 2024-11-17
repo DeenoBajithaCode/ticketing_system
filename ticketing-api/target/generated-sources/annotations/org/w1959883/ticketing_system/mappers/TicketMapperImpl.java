@@ -6,8 +6,8 @@ import org.w1959883.ticketing_system.models.Ticket;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2024-11-05T00:26:41+0530",
-    comments = "version: 1.6.0.Beta2, compiler: javac, environment: Java 21.0.2 (Oracle Corporation)"
+    date = "2024-11-17T15:34:22+0530",
+    comments = "version: 1.6.0.Beta2, compiler: javac, environment: Java 22.0.2 (Oracle Corporation)"
 )
 public class TicketMapperImpl implements TicketMapper {
 
