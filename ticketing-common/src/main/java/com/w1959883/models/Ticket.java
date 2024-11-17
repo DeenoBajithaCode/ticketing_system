@@ -2,7 +2,7 @@ package com.w1959883.models;
 
 public class Ticket
 {
-    private Long ticketId;
+    private Integer ticketId;
     private String ticketName;
     private Integer vendorId;
     private Integer customerId;
@@ -11,12 +11,12 @@ public class Ticket
     {
     }
 
-    public Long getTicketId()
+    public Integer getTicketId()
     {
         return ticketId;
     }
 
-    public void setTicketId( Long ticketId )
+    public void setTicketId( Integer ticketId )
     {
         this.ticketId = ticketId;
     }
