@@ -2,7 +2,6 @@ package org.w1959883.ticketing_system.mappers;
 
 import javax.annotation.processing.Generated;
 import org.w1959883.ticketing_system.dtos.CustomerDto;
-import org.w1959883.ticketing_system.models.Customer;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
