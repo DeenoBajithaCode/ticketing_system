@@ -1,15 +1,13 @@
 package com.w1959883.services;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.w1959883.models.Configuration;
-import com.w1959883.models.Ticket;
 import com.w1959883.models.Customer;
+import com.w1959883.models.Ticket;
 import com.w1959883.models.Vendor;
 import com.w1959883.util.TicketCounter;
 import com.w1959883.util.TicketingLogger;
 import org.slf4j.Logger;
 
-import java.io.File;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 
@@ -43,12 +41,12 @@ public class ProcessManager
         return instance;
     }
 
-    public synchronized void start() {
+    public synchronized void start( Configuration configuration ) {
         if (running) {
             logger.info( "Process is already running." );
             return;
         }
-        setupProcess();
+        setupProcess( configuration );
 
         running = true;
         //Vendor Threads
@@ -82,9 +80,8 @@ public class ProcessManager
         logger.info( "Process has Started." );
     }
 
-    private void setupProcess()
+    private void setupProcess( Configuration configuration )
     {
-        Configuration configuration = readFile();
         assert configuration != null;
         ticketsPool = new ArrayBlockingQueue<>(configuration.getMaximumTicketCapacity());
         ticketCounter = new TicketCounter(configuration.getTotalNumberOfTickets());
@@ -115,22 +112,6 @@ public class ProcessManager
         vendorThreadOne.interrupt();
         customerThreadOne.interrupt();
         logger.info( "Process has stopped." );
-    }
-
-    private static Configuration readFile() {
-        try {
-            // Create ObjectMapper to handle JSON deserialization
-            ObjectMapper mapper = new ObjectMapper();
-
-            // Read JSON file and convert it to Configuration object
-            Configuration config = mapper.readValue(new File("config.json"), Configuration.class);
-
-            logger.info("Configuration successfully read from config.json");
-            return config;
-        } catch (Exception e) {
-            logger.error("Error reading configuration file: {}", e.getMessage());
-            return null;
-        }
     }
 }
 

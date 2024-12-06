@@ -1,13 +1,12 @@
 package org.w1959883;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.w1959883.models.Configuration;
 import com.w1959883.services.ProcessManager;
+import com.w1959883.util.FileUtil;
 import com.w1959883.util.TicketingLogger;
 import org.slf4j.Logger;
 import org.w1959883.util.ConfigHandler;
 
-import java.io.File;
 import java.util.Scanner;
 
 public class CliApplication
@@ -54,7 +53,7 @@ public class CliApplication
                         }
                         else
                         {
-                            processManager.start();
+                            processManager.start( FileUtil.readFile() );
                         }
                         break;
 
@@ -66,7 +65,7 @@ public class CliApplication
                     case 3:
                         logger.info( "Setting up configurations..." );
                         config = ConfigHandler.setConfig();
-                        writeFile( config );
+                        FileUtil.writeFile( config );
                         break;
 
                     case 4:
@@ -85,20 +84,5 @@ public class CliApplication
             }
         }
 
-    }
-
-    private static void writeFile( Configuration config )
-    {
-        // Save configuration to JSON
-        try
-        {
-            ObjectMapper mapper = new ObjectMapper();
-            mapper.writeValue( new File( "config.json" ), config );
-            logger.info( "Configuration saved to config.json" );
-        }
-        catch( Exception e )
-        {
-            logger.error( "Error Writing Configs to the file{}", e.getMessage() );
-        }
     }
 }

@@ -6,21 +6,37 @@ import com.w1959883.services.ProcessManager;
 import com.w1959883.util.TicketingLogger;
 import org.slf4j.Logger;
 import org.springframework.stereotype.Service;
+import org.w1959883.ticketing_system.models.ConfigurationEntity;
+import org.w1959883.ticketing_system.models.ConfigurationStatus;
+import org.w1959883.ticketing_system.repositories.ConfigRepository;
 
 import java.io.File;
+import java.util.List;
 
 @Service
 public class ExecutionService
 {
     private static final Logger logger = TicketingLogger.getLogger();
     private static final ProcessManager processManager = ProcessManager.getInstance();
+    private final ConfigRepository configRepository;
+
+    public ExecutionService( ConfigRepository configRepository )
+    {
+        this.configRepository = configRepository;
+    }
 
     public void setExecution( Boolean executionRequest )
     {
-        if( executionRequest ){
-            processManager.start();
+        List<ConfigurationEntity> configurationEntities = configRepository.findAllByStatus( ConfigurationStatus.NOT_DONE );
+        if( executionRequest )
+        {
+            for( ConfigurationEntity configuration : configurationEntities )
+            {
+                processManager.start( configuration );
+            }
         }
-        else {
+        else
+        {
             processManager.stop();
         }
     }

@@ -41,7 +41,7 @@ public class Vendor implements Runnable {
                 ticket.setTicketId( ticketNumber );
                 ticket.setVendorId( vendorId );
                 ticketPool.put( ticket );
-                logger.info( vendorId + " produced " );
+                logger.info( vendorId + " produced " + ticketNumber );
                 // Simulate production time
                 Thread.sleep(productionTime);
             }
