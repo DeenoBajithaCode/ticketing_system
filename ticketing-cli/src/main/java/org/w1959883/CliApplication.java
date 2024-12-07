@@ -4,7 +4,7 @@ import com.w1959883.models.Configuration;
 import com.w1959883.services.ProcessManager;
 import com.w1959883.util.FileUtil;
 import com.w1959883.util.TicketingLogger;
-import org.slf4j.Logger;
+import org.apache.logging.log4j.Logger;
 import org.w1959883.util.ConfigHandler;
 
 import java.util.Scanner;

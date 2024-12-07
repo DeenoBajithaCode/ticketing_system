@@ -6,7 +6,7 @@ import com.w1959883.models.Ticket;
 import com.w1959883.models.Vendor;
 import com.w1959883.util.TicketCounter;
 import com.w1959883.util.TicketingLogger;
-import org.slf4j.Logger;
+import org.apache.logging.log4j.Logger;
 
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;

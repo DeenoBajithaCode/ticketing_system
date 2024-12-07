@@ -1,0 +1,8 @@
+com\w1959883\util\TicketingLogger.class
+com\w1959883\models\Vendor.class
+com\w1959883\util\FileUtil.class
+com\w1959883\models\Configuration.class
+com\w1959883\models\Customer.class
+com\w1959883\models\Ticket.class
+com\w1959883\services\ProcessManager.class
+com\w1959883\util\TicketCounter.class

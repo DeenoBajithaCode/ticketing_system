@@ -30,24 +30,19 @@
             <artifactId>jackson-databind</artifactId>
             <version>2.18.1</version>
         </dependency>
+        <!-- Log4j 2 Core -->
         <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-            <version>1.7.36</version>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>2.24.2</version>
         </dependency>
 
+        <!-- Log4j 2 API -->
         <dependency>
-            <groupId>ch.qos.logback</groupId>
-            <artifactId>logback-classic</artifactId>
-            <version>1.2.11</version>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>2.24.2</version>
         </dependency>
-
-        <dependency>
-            <groupId>ch.qos.logback</groupId>
-            <artifactId>logback-core</artifactId>
-            <version>1.2.11</version>
-        </dependency>
-
 
     </dependencies>
 
@@ -57,10 +52,6 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
-                <configurationEntity>
-                    <source>21</source>
-                    <target>21</target>
-                </configurationEntity>
             </plugin>
         </plugins>
     </build>
