@@ -1,15 +1,13 @@
 package org.w1959883.ticketing_system.models;
 
 import com.w1959883.models.Configuration;
-import jakarta.persistence.Entity;
-import jakarta.persistence.EnumType;
-import jakarta.persistence.Enumerated;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 @Entity
-public class ConfigurationEntity extends Configuration
+public class Config extends Configuration
 {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long configurationId;
     @Enumerated( EnumType.STRING )
     private ConfigurationStatus status;
@@ -29,8 +27,8 @@ public class ConfigurationEntity extends Configuration
         return status;
     }
 
-    public void setStatus( String status )
+    public void setStatus( ConfigurationStatus status )
     {
-        this.status = ConfigurationStatus.valueOf( status );
+        this.status =  status;
     }
 }

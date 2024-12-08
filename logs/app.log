@@ -230,3 +230,12 @@
 2024-12-07 19:56:09 [Thread-8] INFO  TicketingSystemLogger - 4 took 98
 2024-12-07 19:56:09 [Thread-7] INFO  TicketingSystemLogger - 3 took 99
 2024-12-07 19:56:09 [Thread-9] INFO  TicketingSystemLogger - 5 took 100
+2024-12-08 00:10:13 [main] INFO  TicketingSystemLogger - 
+=================================================
+| Welcome to the Realtime Ticket Booking System |
+=================================================
+2024-12-08 00:10:13 [main] INFO  TicketingSystemLogger - 1. Start Process
+2024-12-08 00:10:13 [main] INFO  TicketingSystemLogger - 2. Stop Process
+2024-12-08 00:10:13 [main] INFO  TicketingSystemLogger - 3. Setup Configurations
+2024-12-08 00:10:13 [main] INFO  TicketingSystemLogger - 4. Exit
+2024-12-08 00:10:13 [main] INFO  TicketingSystemLogger - Please choose an option (1-4): 

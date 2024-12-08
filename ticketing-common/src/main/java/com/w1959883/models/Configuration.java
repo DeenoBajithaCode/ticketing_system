@@ -1,5 +1,8 @@
 package com.w1959883.models;
 
+import jakarta.persistence.MappedSuperclass;
+
+@MappedSuperclass
 public class Configuration
 {
     private Integer totalNumberOfTickets;
