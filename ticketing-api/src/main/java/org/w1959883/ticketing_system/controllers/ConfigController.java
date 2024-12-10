@@ -1,72 +1,54 @@
 package org.w1959883.ticketing_system.controllers;
-
 import com.w1959883.models.Configuration;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.w1959883.ticketing_system.exceptions.ResourceNotFoundException;
 import org.w1959883.ticketing_system.models.Config;
 import org.w1959883.ticketing_system.services.ConfigService;
 
 import java.util.List;
-import java.util.Optional;
 
 @RestController
-@RequestMapping( "/api/config" )
-public class ConfigController
-{
+@RequestMapping("/api/config")
+public class ConfigController {
+
     private final ConfigService configService;
 
-    public ConfigController( ConfigService configService )
-    {
+    public ConfigController(ConfigService configService) {
         this.configService = configService;
     }
 
-    @PostMapping( "/add" )
-    private void addConfig( Configuration config )
-    {
-        configService.addConfig( config );
+    @PostMapping("/add")
+    public void addConfig(@RequestBody Configuration config) {
+        if (config == null) {
+            throw new IllegalArgumentException("Configuration object cannot be null");
+        }
+        configService.addConfig(config);
     }
 
     @GetMapping
-    public List<Config> getAllConfigs()
-    {
+    public List<Config> getAllConfigs() {
         return configService.getAllConfigs();
     }
 
-    @GetMapping( "/{id}" )
-    public ResponseEntity<Config> getConfigById( @PathVariable Integer id )
-    {
-        Optional<Config> config = configService.getConfigById( id );
-        return config.map( ResponseEntity::ok )
-                       .orElseGet( () -> ResponseEntity.notFound().build() );
+    @GetMapping("/{id}")
+    public Config getConfigById(@PathVariable Integer id) {
+        return configService.getConfigById(id)
+                            .orElseThrow(() -> new ResourceNotFoundException("Configuration not found for ID: " + id));
     }
 
-    @PutMapping( "/{id}" )
-    public ResponseEntity<Configuration> updateConfig( @PathVariable Integer id, @RequestBody Configuration configuration )
-    {
-        Optional<Config> config = configService.getConfigById( id );
-        if( config.isPresent() )
-        {
-            return ResponseEntity.ok( configService.updateConfig( configuration ) );
+    @PutMapping("/{id}")
+    public Config updateConfig(@PathVariable Integer id, @RequestBody Configuration configuration) {
+        if (!configService.getConfigById(id).isPresent()) {
+            throw new ResourceNotFoundException("Cannot update. Configuration not found for ID: " + id);
         }
-        else
-        {
-            return ResponseEntity.notFound().build();
-        }
+        return configService.updateConfig(configuration);
     }
 
-    @DeleteMapping( "/{id}" )
-    public ResponseEntity<Void> deleteConfig( @PathVariable Integer id )
-    {
-        Optional<Config> config = configService.getConfigById( id );
-        if( config.isPresent() )
-        {
-            configService.deleteConfig( id );
-            return ResponseEntity.noContent().build();
+    @DeleteMapping("/{id}")
+    public void deleteConfig(@PathVariable Integer id) {
+        if (!configService.getConfigById(id).isPresent()) {
+            throw new ResourceNotFoundException("Cannot delete. Configuration not found for ID: " + id);
         }
-        else
-        {
-            return ResponseEntity.notFound().build();
-        }
+        configService.deleteConfig(id);
     }
-
 }

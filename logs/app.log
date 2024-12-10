@@ -239,3 +239,255 @@
 2024-12-08 00:10:13 [main] INFO  TicketingSystemLogger - 3. Setup Configurations
 2024-12-08 00:10:13 [main] INFO  TicketingSystemLogger - 4. Exit
 2024-12-08 00:10:13 [main] INFO  TicketingSystemLogger - Please choose an option (1-4): 
+2024-12-10 23:36:43 [main] INFO  TicketingSystemLogger - 
+=================================================
+| Welcome to the Realtime Ticket Booking System |
+=================================================
+2024-12-10 23:36:43 [main] INFO  TicketingSystemLogger - 1. Start Process
+2024-12-10 23:36:43 [main] INFO  TicketingSystemLogger - 2. Stop Process
+2024-12-10 23:36:43 [main] INFO  TicketingSystemLogger - 3. Setup Configurations
+2024-12-10 23:36:43 [main] INFO  TicketingSystemLogger - 4. Exit
+2024-12-10 23:36:43 [main] INFO  TicketingSystemLogger - Please choose an option (1-4): 
+2024-12-10 23:36:48 [main] ERROR TicketingSystemLogger - Invalid choice. Please select a valid option.
+2024-12-10 23:36:48 [main] INFO  TicketingSystemLogger - 1. Start Process
+2024-12-10 23:36:48 [main] INFO  TicketingSystemLogger - 2. Stop Process
+2024-12-10 23:36:48 [main] INFO  TicketingSystemLogger - 3. Setup Configurations
+2024-12-10 23:36:48 [main] INFO  TicketingSystemLogger - 4. Exit
+2024-12-10 23:36:48 [main] INFO  TicketingSystemLogger - Please choose an option (1-4): 
+2024-12-10 23:36:53 [main] WARN  TicketingSystemLogger - Configurations are not set up yet. Please set up configurations first.
+2024-12-10 23:36:53 [main] INFO  TicketingSystemLogger - 1. Start Process
+2024-12-10 23:36:53 [main] INFO  TicketingSystemLogger - 2. Stop Process
+2024-12-10 23:36:53 [main] INFO  TicketingSystemLogger - 3. Setup Configurations
+2024-12-10 23:36:53 [main] INFO  TicketingSystemLogger - 4. Exit
+2024-12-10 23:36:53 [main] INFO  TicketingSystemLogger - Please choose an option (1-4): 
+2024-12-10 23:37:01 [main] INFO  TicketingSystemLogger - Setting up configurations...
+2024-12-10 23:37:01 [main] INFO  TicketingSystemLogger - Enter Total Number Of Tickets (or type 'cancel' to exit): 
+2024-12-10 23:37:04 [main] INFO  TicketingSystemLogger - Enter Ticket Release Rate (or type 'cancel' to exit): 
+2024-12-10 23:37:06 [main] INFO  TicketingSystemLogger - Enter Customer Retrieval Rate (or type 'cancel' to exit): 
+2024-12-10 23:37:07 [main] INFO  TicketingSystemLogger - Enter Maximum Ticket Capacity (or type 'cancel' to exit): 
+2024-12-10 23:37:10 [main] INFO  TicketingSystemLogger - Configuration saved to config.json
+2024-12-10 23:37:10 [main] INFO  TicketingSystemLogger - 1. Start Process
+2024-12-10 23:37:10 [main] INFO  TicketingSystemLogger - 2. Stop Process
+2024-12-10 23:37:10 [main] INFO  TicketingSystemLogger - 3. Setup Configurations
+2024-12-10 23:37:10 [main] INFO  TicketingSystemLogger - 4. Exit
+2024-12-10 23:37:10 [main] INFO  TicketingSystemLogger - Please choose an option (1-4): 
+2024-12-10 23:37:12 [main] INFO  TicketingSystemLogger - Configuration successfully read from config.json
+2024-12-10 23:37:12 [main] INFO  TicketingSystemLogger - Process has Started.
+2024-12-10 23:37:12 [main] INFO  TicketingSystemLogger - 1. Start Process
+2024-12-10 23:37:12 [main] INFO  TicketingSystemLogger - 2. Stop Process
+2024-12-10 23:37:12 [main] INFO  TicketingSystemLogger - 3. Setup Configurations
+2024-12-10 23:37:12 [main] INFO  TicketingSystemLogger - 4. Exit
+2024-12-10 23:37:12 [main] INFO  TicketingSystemLogger - Please choose an option (1-4): 
+2024-12-10 23:41:01 [main] INFO  TicketingSystemLogger - 
+=================================================
+| Welcome to the Realtime Ticket Booking System |
+=================================================
+2024-12-10 23:41:01 [main] INFO  TicketingSystemLogger - 1. Start Process
+2024-12-10 23:41:01 [main] INFO  TicketingSystemLogger - 2. Stop Process
+2024-12-10 23:41:01 [main] INFO  TicketingSystemLogger - 3. Setup Configurations
+2024-12-10 23:41:01 [main] INFO  TicketingSystemLogger - 4. Exit
+2024-12-10 23:41:01 [main] INFO  TicketingSystemLogger - Please choose an option (1-4): 
+2024-12-10 23:41:06 [main] INFO  TicketingSystemLogger - Setting up configurations...
+2024-12-10 23:41:06 [main] INFO  TicketingSystemLogger - Enter Total Number Of Tickets (or type 'cancel' to exit): 
+2024-12-10 23:41:08 [main] INFO  TicketingSystemLogger - Enter Ticket Release Rate (or type 'cancel' to exit): 
+2024-12-10 23:41:10 [main] INFO  TicketingSystemLogger - Enter Customer Retrieval Rate (or type 'cancel' to exit): 
+2024-12-10 23:41:10 [main] INFO  TicketingSystemLogger - Enter Maximum Ticket Capacity (or type 'cancel' to exit): 
+2024-12-10 23:41:13 [main] INFO  TicketingSystemLogger - Configuration saved to config.json
+2024-12-10 23:41:13 [main] INFO  TicketingSystemLogger - 1. Start Process
+2024-12-10 23:41:13 [main] INFO  TicketingSystemLogger - 2. Stop Process
+2024-12-10 23:41:13 [main] INFO  TicketingSystemLogger - 3. Setup Configurations
+2024-12-10 23:41:13 [main] INFO  TicketingSystemLogger - 4. Exit
+2024-12-10 23:41:13 [main] INFO  TicketingSystemLogger - Please choose an option (1-4): 
+2024-12-10 23:41:15 [main] INFO  TicketingSystemLogger - Configuration successfully read from config.json
+2024-12-10 23:41:15 [main] INFO  TicketingSystemLogger - Process has Started.
+2024-12-10 23:41:15 [main] INFO  TicketingSystemLogger - 1. Start Process
+2024-12-10 23:41:15 [main] INFO  TicketingSystemLogger - 2. Stop Process
+2024-12-10 23:41:15 [main] INFO  TicketingSystemLogger - 3. Setup Configurations
+2024-12-10 23:41:15 [main] INFO  TicketingSystemLogger - 4. Exit
+2024-12-10 23:41:15 [main] INFO  TicketingSystemLogger - Please choose an option (1-4): 
+2024-12-10 23:42:50 [main] INFO  TicketingSystemLogger - 
+=================================================
+| Welcome to the Realtime Ticket Booking System |
+=================================================
+2024-12-10 23:42:50 [main] INFO  TicketingSystemLogger - 1. Start Process
+2024-12-10 23:42:50 [main] INFO  TicketingSystemLogger - 2. Stop Process
+2024-12-10 23:42:50 [main] INFO  TicketingSystemLogger - 3. Setup Configurations
+2024-12-10 23:42:50 [main] INFO  TicketingSystemLogger - 4. Exit
+2024-12-10 23:42:50 [main] INFO  TicketingSystemLogger - Please choose an option (1-4): 
+2024-12-10 23:42:54 [main] ERROR TicketingSystemLogger - Invalid choice. Please select a valid option.
+2024-12-10 23:42:54 [main] INFO  TicketingSystemLogger - 1. Start Process
+2024-12-10 23:42:54 [main] INFO  TicketingSystemLogger - 2. Stop Process
+2024-12-10 23:42:54 [main] INFO  TicketingSystemLogger - 3. Setup Configurations
+2024-12-10 23:42:54 [main] INFO  TicketingSystemLogger - 4. Exit
+2024-12-10 23:42:54 [main] INFO  TicketingSystemLogger - Please choose an option (1-4): 
+2024-12-10 23:42:58 [main] WARN  TicketingSystemLogger - Configurations are not set up yet. Please set up configurations first.
+2024-12-10 23:42:58 [main] INFO  TicketingSystemLogger - 1. Start Process
+2024-12-10 23:42:58 [main] INFO  TicketingSystemLogger - 2. Stop Process
+2024-12-10 23:42:58 [main] INFO  TicketingSystemLogger - 3. Setup Configurations
+2024-12-10 23:42:58 [main] INFO  TicketingSystemLogger - 4. Exit
+2024-12-10 23:42:58 [main] INFO  TicketingSystemLogger - Please choose an option (1-4): 
+2024-12-10 23:42:59 [main] INFO  TicketingSystemLogger - Exiting the system. Goodbye!
+2024-12-10 23:43:06 [main] INFO  TicketingSystemLogger - 
+=================================================
+| Welcome to the Realtime Ticket Booking System |
+=================================================
+2024-12-10 23:43:06 [main] INFO  TicketingSystemLogger - 1. Start Process
+2024-12-10 23:43:06 [main] INFO  TicketingSystemLogger - 2. Stop Process
+2024-12-10 23:43:06 [main] INFO  TicketingSystemLogger - 3. Setup Configurations
+2024-12-10 23:43:06 [main] INFO  TicketingSystemLogger - 4. Exit
+2024-12-10 23:43:06 [main] INFO  TicketingSystemLogger - Please choose an option (1-4): 
+2024-12-10 23:43:07 [main] INFO  TicketingSystemLogger - Setting up configurations...
+2024-12-10 23:43:07 [main] INFO  TicketingSystemLogger - Enter Total Number Of Tickets (or type 'cancel' to exit): 
+2024-12-10 23:43:13 [main] INFO  TicketingSystemLogger - Enter Ticket Release Rate (or type 'cancel' to exit): 
+2024-12-10 23:43:16 [main] INFO  TicketingSystemLogger - Enter Customer Retrieval Rate (or type 'cancel' to exit): 
+2024-12-10 23:43:17 [main] INFO  TicketingSystemLogger - Enter Maximum Ticket Capacity (or type 'cancel' to exit): 
+2024-12-10 23:43:18 [main] INFO  TicketingSystemLogger - Configuration saved to config.json
+2024-12-10 23:43:18 [main] INFO  TicketingSystemLogger - 1. Start Process
+2024-12-10 23:43:18 [main] INFO  TicketingSystemLogger - 2. Stop Process
+2024-12-10 23:43:18 [main] INFO  TicketingSystemLogger - 3. Setup Configurations
+2024-12-10 23:43:18 [main] INFO  TicketingSystemLogger - 4. Exit
+2024-12-10 23:43:18 [main] INFO  TicketingSystemLogger - Please choose an option (1-4): 
+2024-12-10 23:43:19 [main] INFO  TicketingSystemLogger - Configuration successfully read from config.json
+2024-12-10 23:43:19 [main] INFO  TicketingSystemLogger - Process has Started.
+2024-12-10 23:43:19 [main] INFO  TicketingSystemLogger - 1. Start Process
+2024-12-10 23:43:19 [main] INFO  TicketingSystemLogger - 2. Stop Process
+2024-12-10 23:43:19 [main] INFO  TicketingSystemLogger - 3. Setup Configurations
+2024-12-10 23:43:19 [main] INFO  TicketingSystemLogger - 4. Exit
+2024-12-10 23:43:19 [main] INFO  TicketingSystemLogger - Please choose an option (1-4): 
+2024-12-10 23:43:20 [Thread-3] INFO  TicketingSystemLogger - 4 produced 4
+2024-12-10 23:43:20 [Thread-0] INFO  TicketingSystemLogger - 1 produced 1
+2024-12-10 23:43:20 [Thread-4] INFO  TicketingSystemLogger - 5 produced 2
+2024-12-10 23:43:20 [Thread-2] INFO  TicketingSystemLogger - 3 produced 5
+2024-12-10 23:43:20 [Thread-1] INFO  TicketingSystemLogger - 2 produced 3
+2024-12-10 23:43:20 [Thread-4] INFO  TicketingSystemLogger - 5 produced 9
+2024-12-10 23:43:20 [Thread-2] INFO  TicketingSystemLogger - 3 produced 7
+2024-12-10 23:43:20 [Thread-1] INFO  TicketingSystemLogger - 2 produced 8
+2024-12-10 23:43:20 [Thread-0] INFO  TicketingSystemLogger - 1 produced 6
+2024-12-10 23:43:20 [Thread-3] INFO  TicketingSystemLogger - 4 produced 10
+2024-12-10 23:48:16 [main] INFO  TicketingSystemLogger - 
+=================================================
+| Welcome to the Realtime Ticket Booking System |
+=================================================
+2024-12-10 23:48:16 [main] INFO  TicketingSystemLogger - 1. Start Process
+2024-12-10 23:48:16 [main] INFO  TicketingSystemLogger - 2. Stop Process
+2024-12-10 23:48:16 [main] INFO  TicketingSystemLogger - 3. Setup Configurations
+2024-12-10 23:48:16 [main] INFO  TicketingSystemLogger - 4. Exit
+2024-12-10 23:48:16 [main] INFO  TicketingSystemLogger - Please choose an option (1-4): 
+2024-12-10 23:51:39 [main] INFO  TicketingSystemLogger - Setting up configurations...
+2024-12-10 23:51:39 [main] INFO  TicketingSystemLogger - Enter Total Number Of Tickets (or type 'cancel' to exit): 
+2024-12-10 23:51:43 [main] INFO  TicketingSystemLogger - Enter Ticket Release Rate (or type 'cancel' to exit): 
+2024-12-10 23:51:44 [main] INFO  TicketingSystemLogger - Enter Customer Retrieval Rate (or type 'cancel' to exit): 
+2024-12-10 23:51:45 [main] INFO  TicketingSystemLogger - Enter Maximum Ticket Capacity (or type 'cancel' to exit): 
+2024-12-10 23:51:48 [main] INFO  TicketingSystemLogger - Configuration saved to config.json
+2024-12-10 23:51:48 [main] INFO  TicketingSystemLogger - 1. Start Process
+2024-12-10 23:51:48 [main] INFO  TicketingSystemLogger - 2. Stop Process
+2024-12-10 23:51:48 [main] INFO  TicketingSystemLogger - 3. Setup Configurations
+2024-12-10 23:51:48 [main] INFO  TicketingSystemLogger - 4. Exit
+2024-12-10 23:51:48 [main] INFO  TicketingSystemLogger - Please choose an option (1-4): 
+2024-12-10 23:51:51 [main] INFO  TicketingSystemLogger - Setting up configurations...
+2024-12-10 23:51:51 [main] INFO  TicketingSystemLogger - Enter Total Number Of Tickets (or type 'cancel' to exit): 
+2024-12-10 23:52:00 [main] INFO  TicketingSystemLogger - Enter Ticket Release Rate (or type 'cancel' to exit): 
+2024-12-10 23:52:05 [main] INFO  TicketingSystemLogger - Enter Customer Retrieval Rate (or type 'cancel' to exit): 
+2024-12-10 23:52:06 [main] INFO  TicketingSystemLogger - Enter Maximum Ticket Capacity (or type 'cancel' to exit): 
+2024-12-10 23:52:20 [main] INFO  TicketingSystemLogger - Configuration saved to config.json
+2024-12-10 23:52:20 [main] INFO  TicketingSystemLogger - 1. Start Process
+2024-12-10 23:52:20 [main] INFO  TicketingSystemLogger - 2. Stop Process
+2024-12-10 23:52:20 [main] INFO  TicketingSystemLogger - 3. Setup Configurations
+2024-12-10 23:52:20 [main] INFO  TicketingSystemLogger - 4. Exit
+2024-12-10 23:52:20 [main] INFO  TicketingSystemLogger - Please choose an option (1-4): 
+2024-12-10 23:52:22 [main] INFO  TicketingSystemLogger - Configuration successfully read from config.json
+2024-12-10 23:52:22 [main] INFO  TicketingSystemLogger - Process has Started.
+2024-12-10 23:52:22 [main] INFO  TicketingSystemLogger - 1. Start Process
+2024-12-10 23:52:22 [Thread-5] INFO  TicketingSystemLogger - 1 took 3
+2024-12-10 23:52:22 [Thread-6] INFO  TicketingSystemLogger - 2 took 5
+2024-12-10 23:52:22 [Thread-8] INFO  TicketingSystemLogger - 4 took 4
+2024-12-10 23:52:22 [main] INFO  TicketingSystemLogger - 2. Stop Process
+2024-12-10 23:52:22 [main] INFO  TicketingSystemLogger - 3. Setup Configurations
+2024-12-10 23:52:22 [Thread-7] INFO  TicketingSystemLogger - 3 took 1
+2024-12-10 23:52:22 [main] INFO  TicketingSystemLogger - 4. Exit
+2024-12-10 23:52:22 [main] INFO  TicketingSystemLogger - Please choose an option (1-4): 
+2024-12-10 23:52:22 [Thread-9] INFO  TicketingSystemLogger - 5 took 2
+2024-12-10 23:52:22 [Thread-0] INFO  TicketingSystemLogger - 1 produced 2
+2024-12-10 23:52:22 [Thread-3] INFO  TicketingSystemLogger - 4 produced 4
+2024-12-10 23:52:22 [Thread-2] INFO  TicketingSystemLogger - 3 produced 3
+2024-12-10 23:52:22 [Thread-1] INFO  TicketingSystemLogger - 2 produced 1
+2024-12-10 23:52:22 [Thread-4] INFO  TicketingSystemLogger - 5 produced 5
+2024-12-10 23:52:23 [Thread-4] INFO  TicketingSystemLogger - 5 produced 6
+2024-12-10 23:52:23 [Thread-0] INFO  TicketingSystemLogger - 1 produced 7
+2024-12-10 23:52:23 [Thread-3] INFO  TicketingSystemLogger - 4 produced 8
+2024-12-10 23:52:23 [Thread-1] INFO  TicketingSystemLogger - 2 produced 9
+2024-12-10 23:52:23 [Thread-2] INFO  TicketingSystemLogger - 3 produced 10
+2024-12-10 23:52:23 [Thread-5] INFO  TicketingSystemLogger - 1 took 6
+2024-12-10 23:52:23 [Thread-6] INFO  TicketingSystemLogger - 2 took 7
+2024-12-10 23:52:23 [Thread-8] INFO  TicketingSystemLogger - 4 took 8
+2024-12-10 23:52:23 [Thread-7] INFO  TicketingSystemLogger - 3 took 9
+2024-12-10 23:52:23 [Thread-9] INFO  TicketingSystemLogger - 5 took 10
+2024-12-10 23:52:23 [Thread-0] INFO  TicketingSystemLogger - 1 produced 14
+2024-12-10 23:52:23 [Thread-2] INFO  TicketingSystemLogger - 3 produced 13
+2024-12-10 23:52:23 [Thread-4] INFO  TicketingSystemLogger - 5 produced 11
+2024-12-10 23:52:23 [Thread-3] INFO  TicketingSystemLogger - 4 produced 12
+2024-12-10 23:52:23 [Thread-1] INFO  TicketingSystemLogger - 2 produced 15
+2024-12-10 23:52:24 [Thread-6] INFO  TicketingSystemLogger - 2 took 12
+2024-12-10 23:52:24 [Thread-5] INFO  TicketingSystemLogger - 1 took 11
+2024-12-10 23:52:24 [Thread-8] INFO  TicketingSystemLogger - 4 took 13
+2024-12-10 23:52:24 [Thread-0] INFO  TicketingSystemLogger - 1 produced 16
+2024-12-10 23:52:24 [Thread-2] INFO  TicketingSystemLogger - 3 produced 20
+2024-12-10 23:52:24 [Thread-1] INFO  TicketingSystemLogger - 2 produced 19
+2024-12-10 23:52:24 [Thread-3] INFO  TicketingSystemLogger - 4 produced 18
+2024-12-10 23:52:24 [Thread-4] INFO  TicketingSystemLogger - 5 produced 17
+2024-12-10 23:52:24 [Thread-7] INFO  TicketingSystemLogger - 3 took 14
+2024-12-10 23:52:24 [Thread-9] INFO  TicketingSystemLogger - 5 took 15
+2024-12-10 23:52:24 [Thread-3] INFO  TicketingSystemLogger - 4 produced 21
+2024-12-10 23:52:24 [Thread-4] INFO  TicketingSystemLogger - 5 produced 23
+2024-12-10 23:52:24 [Thread-2] INFO  TicketingSystemLogger - 3 produced 24
+2024-12-10 23:52:24 [Thread-1] INFO  TicketingSystemLogger - 2 produced 22
+2024-12-10 23:52:24 [Thread-0] INFO  TicketingSystemLogger - 1 produced 25
+2024-12-10 23:52:24 [Thread-5] INFO  TicketingSystemLogger - 1 took 17
+2024-12-10 23:52:24 [Thread-6] INFO  TicketingSystemLogger - 2 took 16
+2024-12-10 23:52:24 [Thread-8] INFO  TicketingSystemLogger - 4 took 19
+2024-12-10 23:52:24 [Thread-7] INFO  TicketingSystemLogger - 3 took 18
+2024-12-10 23:52:24 [Thread-9] INFO  TicketingSystemLogger - 5 took 20
+2024-12-10 23:52:25 [Thread-0] INFO  TicketingSystemLogger - 1 produced 27
+2024-12-10 23:52:25 [Thread-1] INFO  TicketingSystemLogger - 2 produced 30
+2024-12-10 23:52:25 [Thread-2] INFO  TicketingSystemLogger - 3 produced 28
+2024-12-10 23:52:25 [Thread-3] INFO  TicketingSystemLogger - 4 produced 26
+2024-12-10 23:52:25 [Thread-4] INFO  TicketingSystemLogger - 5 produced 29
+2024-12-10 23:52:25 [Thread-6] INFO  TicketingSystemLogger - 2 took 21
+2024-12-10 23:52:25 [Thread-5] INFO  TicketingSystemLogger - 1 took 22
+2024-12-10 23:52:25 [Thread-8] INFO  TicketingSystemLogger - 4 took 23
+2024-12-10 23:52:25 [Thread-3] INFO  TicketingSystemLogger - 4 produced 32
+2024-12-10 23:52:25 [Thread-1] INFO  TicketingSystemLogger - 2 produced 33
+2024-12-10 23:52:25 [Thread-0] INFO  TicketingSystemLogger - 1 produced 31
+2024-12-11 00:05:32 [main] INFO  TicketingSystemLogger - 
+=================================================
+| Welcome to the Realtime Ticket Booking System |
+=================================================
+2024-12-11 00:05:32 [main] INFO  TicketingSystemLogger - 1. Start Process
+2024-12-11 00:05:32 [main] INFO  TicketingSystemLogger - 2. Stop Process
+2024-12-11 00:05:32 [main] INFO  TicketingSystemLogger - 3. Setup Configurations
+2024-12-11 00:05:32 [main] INFO  TicketingSystemLogger - 4. Exit
+2024-12-11 00:05:32 [main] INFO  TicketingSystemLogger - Please choose an option (1-4): 
+2024-12-11 00:05:35 [main] WARN  TicketingSystemLogger - Configurations are not set up yet. Please set up configurations first.
+2024-12-11 00:05:35 [main] INFO  TicketingSystemLogger - 1. Start Process
+2024-12-11 00:05:35 [main] INFO  TicketingSystemLogger - 2. Stop Process
+2024-12-11 00:05:35 [main] INFO  TicketingSystemLogger - 3. Setup Configurations
+2024-12-11 00:05:35 [main] INFO  TicketingSystemLogger - 4. Exit
+2024-12-11 00:05:35 [main] INFO  TicketingSystemLogger - Please choose an option (1-4): 
+2024-12-11 00:05:38 [main] INFO  TicketingSystemLogger - Setting up configurations...
+2024-12-11 00:05:38 [main] INFO  TicketingSystemLogger - Enter Total Number Of Tickets (or type 'cancel' to exit): 
+2024-12-11 00:05:43 [main] INFO  TicketingSystemLogger - Enter Ticket Release Rate (or type 'cancel' to exit): 
+2024-12-11 00:05:48 [main] INFO  TicketingSystemLogger - Enter Customer Retrieval Rate (or type 'cancel' to exit): 
+2024-12-11 00:05:49 [main] INFO  TicketingSystemLogger - Enter Maximum Ticket Capacity (or type 'cancel' to exit): 
+2024-12-11 00:05:53 [main] INFO  TicketingSystemLogger - Configuration saved to config.json
+2024-12-11 00:05:53 [main] INFO  TicketingSystemLogger - 1. Start Process
+2024-12-11 00:05:53 [main] INFO  TicketingSystemLogger - 2. Stop Process
+2024-12-11 00:05:53 [main] INFO  TicketingSystemLogger - 3. Setup Configurations
+2024-12-11 00:05:53 [main] INFO  TicketingSystemLogger - 4. Exit
+2024-12-11 00:05:53 [main] INFO  TicketingSystemLogger - Please choose an option (1-4): 
+2024-12-11 00:05:55 [main] INFO  TicketingSystemLogger - Configuration successfully read from config.json
+2024-12-11 00:05:55 [main] INFO  TicketingSystemLogger - Process has Started.
+2024-12-11 00:05:55 [main] INFO  TicketingSystemLogger - 1. Start Process
+2024-12-11 00:05:55 [main] INFO  TicketingSystemLogger - 2. Stop Process
+2024-12-11 00:05:55 [main] INFO  TicketingSystemLogger - 3. Setup Configurations
+2024-12-11 00:05:55 [main] INFO  TicketingSystemLogger - 4. Exit
+2024-12-11 00:05:55 [main] INFO  TicketingSystemLogger - Please choose an option (1-4): 

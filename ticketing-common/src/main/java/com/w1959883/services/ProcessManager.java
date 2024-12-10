@@ -2,24 +2,23 @@ package com.w1959883.services;
 
 import com.w1959883.models.Configuration;
 import com.w1959883.models.Customer;
-import com.w1959883.models.Ticket;
 import com.w1959883.models.Vendor;
 import com.w1959883.util.TicketCounter;
+import com.w1959883.util.TicketPool;
 import com.w1959883.util.TicketingLogger;
 import org.apache.logging.log4j.Logger;
 
 import java.util.concurrent.ArrayBlockingQueue;
-import java.util.concurrent.BlockingQueue;
 
 public class ProcessManager
 {
     private static final Logger logger = TicketingLogger.getLogger();
     private static final ProcessManager instance = new ProcessManager();
+    private static TicketPool ticketsPool;
     private TicketCounter ticketCounter;
     private Long productionTime;
     private Long sellingTime;
-    //Ticket pool
-    private BlockingQueue<Ticket> ticketsPool = null;
+
     private Thread vendorThreadOne;
     private Thread vendorThreadTwo;
     private Thread vendorThreadThree;
@@ -83,7 +82,7 @@ public class ProcessManager
     private void setupProcess( Configuration configuration )
     {
         assert configuration != null;
-        ticketsPool = new ArrayBlockingQueue<>(configuration.getMaximumTicketCapacity());
+        ticketsPool = new TicketPool(configuration.getMaximumTicketCapacity());
         ticketCounter = new TicketCounter(configuration.getTotalNumberOfTickets());
         productionTime = calculateProductionTime(configuration.getTicketReleaseRate());
         sellingTime = calculateSellingTime(configuration.getCustomerRetrievalRate());

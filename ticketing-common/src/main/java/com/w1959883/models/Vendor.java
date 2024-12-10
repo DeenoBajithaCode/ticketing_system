@@ -1,19 +1,18 @@
 package com.w1959883.models;
 
 import com.w1959883.util.TicketCounter;
+import com.w1959883.util.TicketPool;
 import com.w1959883.util.TicketingLogger;
 import org.apache.logging.log4j.Logger;
 
-import java.util.concurrent.BlockingQueue;
-
 public class Vendor implements Runnable {
     private static final Logger logger = TicketingLogger.getLogger();
-    private final BlockingQueue<Ticket> ticketPool;
+    private final TicketPool ticketPool;
     private final Integer vendorId;
     private final TicketCounter ticketCounter;
     private final Long productionTime;
 
-    public Vendor( BlockingQueue<Ticket> ticketPool, Integer vendorId, TicketCounter ticketCounter, Long productionTime ) {
+    public Vendor( TicketPool ticketPool, Integer vendorId, TicketCounter ticketCounter, Long productionTime ) {
         this.ticketPool = ticketPool;
         this.vendorId = vendorId;
         this.ticketCounter = ticketCounter;
@@ -40,7 +39,7 @@ public class Vendor implements Runnable {
                 Ticket ticket = new Ticket();
                 ticket.setTicketId( ticketNumber );
                 ticket.setVendorId( vendorId );
-                ticketPool.put( ticket );
+                ticketPool.addTickets( ticket );
                 logger.info( vendorId + " produced " + ticketNumber );
                 // Simulate production time
                 Thread.sleep(productionTime);
