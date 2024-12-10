@@ -2,7 +2,7 @@ package com.w1959883.util;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.w1959883.models.Configuration;
-import org.slf4j.Logger;
+import org.apache.logging.log4j.Logger;
 
 import java.io.File;
 

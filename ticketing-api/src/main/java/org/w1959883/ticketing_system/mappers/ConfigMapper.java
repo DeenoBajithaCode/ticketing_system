@@ -4,7 +4,7 @@ import com.w1959883.models.Configuration;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;
-import org.w1959883.ticketing_system.models.ConfigurationEntity;
+import org.w1959883.ticketing_system.models.Config;
 
 @Mapper
 public interface ConfigMapper
@@ -12,7 +12,7 @@ public interface ConfigMapper
     ConfigMapper INSTANCE = Mappers.getMapper( ConfigMapper.class );
 
     @Mapping( target = "configurationId", ignore = true )
-    ConfigurationEntity toConfig( Configuration configuration );
+    Config toConfig( Configuration configuration );
 
-    Configuration toConfiguration( ConfigurationEntity configurationEntity );
+    Configuration toConfiguration( Config config );
 }

@@ -4,9 +4,9 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.w1959883.models.Configuration;
 import com.w1959883.services.ProcessManager;
 import com.w1959883.util.TicketingLogger;
-import org.slf4j.Logger;
+import org.apache.logging.log4j.Logger;
 import org.springframework.stereotype.Service;
-import org.w1959883.ticketing_system.models.ConfigurationEntity;
+import org.w1959883.ticketing_system.models.Config;
 import org.w1959883.ticketing_system.models.ConfigurationStatus;
 import org.w1959883.ticketing_system.repositories.ConfigRepository;
 
@@ -27,12 +27,15 @@ public class ExecutionService
 
     public void setExecution( Boolean executionRequest )
     {
-        List<ConfigurationEntity> configurationEntities = configRepository.findAllByStatus( ConfigurationStatus.NOT_DONE );
+        List<Config> configurationEntities = configRepository.findAllByStatus( ConfigurationStatus.QUEUED );
         if( executionRequest )
         {
-            for( ConfigurationEntity configuration : configurationEntities )
+            for( Config configuration : configurationEntities )
             {
                 processManager.start( configuration );
+                // Update the status after the process starts
+                configuration.setStatus(ConfigurationStatus.DONE );
+                configRepository.save(configuration);
             }
         }
         else

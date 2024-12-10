@@ -23,8 +23,4 @@ public class ExecutionController
         executionService.setExecution( executionRequest );
     }
 
-    @PostMapping("/add")
-    private void addTicket( Configuration configuration ){
-        executionService.addConfiguration(configuration);
-    }
 }

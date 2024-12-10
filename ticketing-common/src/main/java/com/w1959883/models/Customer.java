@@ -1,7 +1,7 @@
 package com.w1959883.models;
 
 import com.w1959883.util.TicketingLogger;
-import org.slf4j.Logger;
+import org.apache.logging.log4j.Logger;
 
 import java.util.concurrent.BlockingQueue;
 

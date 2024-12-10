@@ -2,7 +2,7 @@ package org.w1959883.util;
 
 import com.w1959883.models.Configuration;
 import com.w1959883.util.TicketingLogger;
-import org.slf4j.Logger;
+import org.apache.logging.log4j.Logger;
 
 import java.util.Scanner;
 

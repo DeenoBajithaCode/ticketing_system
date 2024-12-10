@@ -3,7 +3,7 @@ package org.w1959883.ticketing_system.controllers;
 import com.w1959883.models.Configuration;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.w1959883.ticketing_system.models.ConfigurationEntity;
+import org.w1959883.ticketing_system.models.Config;
 import org.w1959883.ticketing_system.services.ConfigService;
 
 import java.util.List;
@@ -27,15 +27,15 @@ public class ConfigController
     }
 
     @GetMapping
-    public List<ConfigurationEntity> getAllConfigs()
+    public List<Config> getAllConfigs()
     {
         return configService.getAllConfigs();
     }
 
     @GetMapping( "/{id}" )
-    public ResponseEntity<ConfigurationEntity> getConfigById( @PathVariable Integer id )
+    public ResponseEntity<Config> getConfigById( @PathVariable Integer id )
     {
-        Optional<ConfigurationEntity> config = configService.getConfigById( id );
+        Optional<Config> config = configService.getConfigById( id );
         return config.map( ResponseEntity::ok )
                        .orElseGet( () -> ResponseEntity.notFound().build() );
     }
@@ -43,7 +43,7 @@ public class ConfigController
     @PutMapping( "/{id}" )
     public ResponseEntity<Configuration> updateConfig( @PathVariable Integer id, @RequestBody Configuration configuration )
     {
-        Optional<ConfigurationEntity> config = configService.getConfigById( id );
+        Optional<Config> config = configService.getConfigById( id );
         if( config.isPresent() )
         {
             return ResponseEntity.ok( configService.updateConfig( configuration ) );
@@ -57,7 +57,7 @@ public class ConfigController
     @DeleteMapping( "/{id}" )
     public ResponseEntity<Void> deleteConfig( @PathVariable Integer id )
     {
-        Optional<ConfigurationEntity> config = configService.getConfigById( id );
+        Optional<Config> config = configService.getConfigById( id );
         if( config.isPresent() )
         {
             configService.deleteConfig( id );

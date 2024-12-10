@@ -1,0 +1,241 @@
+2024-12-07 19:55:28 [main] INFO  TicketingSystemLogger - 
+=================================================
+| Welcome to the Realtime Ticket Booking System |
+=================================================
+2024-12-07 19:55:28 [main] INFO  TicketingSystemLogger - 1. Start Process
+2024-12-07 19:55:28 [main] INFO  TicketingSystemLogger - 2. Stop Process
+2024-12-07 19:55:28 [main] INFO  TicketingSystemLogger - 3. Setup Configurations
+2024-12-07 19:55:28 [main] INFO  TicketingSystemLogger - 4. Exit
+2024-12-07 19:55:28 [main] INFO  TicketingSystemLogger - Please choose an option (1-4): 
+2024-12-07 19:55:46 [main] INFO  TicketingSystemLogger - Setting up configurations...
+2024-12-07 19:55:46 [main] INFO  TicketingSystemLogger - Enter Total Number Of Tickets (or type 'cancel' to exit): 
+2024-12-07 19:55:51 [main] INFO  TicketingSystemLogger - Enter Ticket Release Rate (or type 'cancel' to exit): 
+2024-12-07 19:55:52 [main] INFO  TicketingSystemLogger - Enter Customer Retrieval Rate (or type 'cancel' to exit): 
+2024-12-07 19:55:53 [main] INFO  TicketingSystemLogger - Enter Maximum Ticket Capacity (or type 'cancel' to exit): 
+2024-12-07 19:55:56 [main] INFO  TicketingSystemLogger - Configuration saved to config.json
+2024-12-07 19:55:56 [main] INFO  TicketingSystemLogger - 1. Start Process
+2024-12-07 19:55:56 [main] INFO  TicketingSystemLogger - 2. Stop Process
+2024-12-07 19:55:56 [main] INFO  TicketingSystemLogger - 3. Setup Configurations
+2024-12-07 19:55:56 [main] INFO  TicketingSystemLogger - 4. Exit
+2024-12-07 19:55:56 [main] INFO  TicketingSystemLogger - Please choose an option (1-4): 
+2024-12-07 19:55:58 [main] INFO  TicketingSystemLogger - Configuration successfully read from config.json
+2024-12-07 19:55:58 [main] INFO  TicketingSystemLogger - Process has Started.
+2024-12-07 19:55:58 [main] INFO  TicketingSystemLogger - 1. Start Process
+2024-12-07 19:55:58 [main] INFO  TicketingSystemLogger - 2. Stop Process
+2024-12-07 19:55:58 [main] INFO  TicketingSystemLogger - 3. Setup Configurations
+2024-12-07 19:55:58 [main] INFO  TicketingSystemLogger - 4. Exit
+2024-12-07 19:55:58 [main] INFO  TicketingSystemLogger - Please choose an option (1-4): 
+2024-12-07 19:55:58 [Thread-6] INFO  TicketingSystemLogger - 2 took 4
+2024-12-07 19:55:58 [Thread-7] INFO  TicketingSystemLogger - 3 took 5
+2024-12-07 19:55:58 [Thread-5] INFO  TicketingSystemLogger - 1 took 3
+2024-12-07 19:55:58 [Thread-9] INFO  TicketingSystemLogger - 5 took 2
+2024-12-07 19:55:58 [Thread-8] INFO  TicketingSystemLogger - 4 took 1
+2024-12-07 19:55:58 [Thread-1] INFO  TicketingSystemLogger - 2 produced 2
+2024-12-07 19:55:58 [Thread-4] INFO  TicketingSystemLogger - 5 produced 5
+2024-12-07 19:55:58 [Thread-0] INFO  TicketingSystemLogger - 1 produced 1
+2024-12-07 19:55:58 [Thread-2] INFO  TicketingSystemLogger - 3 produced 3
+2024-12-07 19:55:58 [Thread-3] INFO  TicketingSystemLogger - 4 produced 4
+2024-12-07 19:55:58 [Thread-2] INFO  TicketingSystemLogger - 3 produced 8
+2024-12-07 19:55:58 [Thread-0] INFO  TicketingSystemLogger - 1 produced 7
+2024-12-07 19:55:58 [Thread-3] INFO  TicketingSystemLogger - 4 produced 6
+2024-12-07 19:55:58 [Thread-1] INFO  TicketingSystemLogger - 2 produced 9
+2024-12-07 19:55:58 [Thread-4] INFO  TicketingSystemLogger - 5 produced 10
+2024-12-07 19:55:58 [Thread-6] INFO  TicketingSystemLogger - 2 took 8
+2024-12-07 19:55:58 [Thread-9] INFO  TicketingSystemLogger - 5 took 6
+2024-12-07 19:55:58 [Thread-8] INFO  TicketingSystemLogger - 4 took 7
+2024-12-07 19:55:58 [Thread-5] INFO  TicketingSystemLogger - 1 took 9
+2024-12-07 19:55:58 [Thread-7] INFO  TicketingSystemLogger - 3 took 10
+2024-12-07 19:55:58 [Thread-2] INFO  TicketingSystemLogger - 3 produced 11
+2024-12-07 19:55:58 [Thread-0] INFO  TicketingSystemLogger - 1 produced 12
+2024-12-07 19:55:58 [Thread-1] INFO  TicketingSystemLogger - 2 produced 15
+2024-12-07 19:55:58 [Thread-3] INFO  TicketingSystemLogger - 4 produced 13
+2024-12-07 19:55:58 [Thread-4] INFO  TicketingSystemLogger - 5 produced 14
+2024-12-07 19:55:59 [Thread-7] INFO  TicketingSystemLogger - 3 took 13
+2024-12-07 19:55:59 [Thread-8] INFO  TicketingSystemLogger - 4 took 12
+2024-12-07 19:55:59 [Thread-5] INFO  TicketingSystemLogger - 1 took 11
+2024-12-07 19:55:59 [Thread-9] INFO  TicketingSystemLogger - 5 took 15
+2024-12-07 19:55:59 [Thread-6] INFO  TicketingSystemLogger - 2 took 14
+2024-12-07 19:55:59 [Thread-3] INFO  TicketingSystemLogger - 4 produced 16
+2024-12-07 19:55:59 [Thread-4] INFO  TicketingSystemLogger - 5 produced 17
+2024-12-07 19:55:59 [Thread-0] INFO  TicketingSystemLogger - 1 produced 20
+2024-12-07 19:55:59 [Thread-1] INFO  TicketingSystemLogger - 2 produced 18
+2024-12-07 19:55:59 [Thread-2] INFO  TicketingSystemLogger - 3 produced 19
+2024-12-07 19:55:59 [Thread-2] INFO  TicketingSystemLogger - 3 produced 21
+2024-12-07 19:55:59 [Thread-4] INFO  TicketingSystemLogger - 5 produced 24
+2024-12-07 19:55:59 [Thread-1] INFO  TicketingSystemLogger - 2 produced 23
+2024-12-07 19:55:59 [Thread-0] INFO  TicketingSystemLogger - 1 produced 22
+2024-12-07 19:55:59 [Thread-3] INFO  TicketingSystemLogger - 4 produced 25
+2024-12-07 19:55:59 [Thread-6] INFO  TicketingSystemLogger - 2 took 16
+2024-12-07 19:55:59 [Thread-7] INFO  TicketingSystemLogger - 3 took 20
+2024-12-07 19:55:59 [Thread-5] INFO  TicketingSystemLogger - 1 took 18
+2024-12-07 19:55:59 [Thread-9] INFO  TicketingSystemLogger - 5 took 17
+2024-12-07 19:55:59 [Thread-8] INFO  TicketingSystemLogger - 4 took 19
+2024-12-07 19:56:00 [Thread-2] INFO  TicketingSystemLogger - 3 produced 26
+2024-12-07 19:56:00 [Thread-4] INFO  TicketingSystemLogger - 5 produced 27
+2024-12-07 19:56:00 [Thread-3] INFO  TicketingSystemLogger - 4 produced 30
+2024-12-07 19:56:00 [Thread-1] INFO  TicketingSystemLogger - 2 produced 28
+2024-12-07 19:56:00 [Thread-0] INFO  TicketingSystemLogger - 1 produced 29
+2024-12-07 19:56:00 [Thread-9] INFO  TicketingSystemLogger - 5 took 23
+2024-12-07 19:56:00 [Thread-8] INFO  TicketingSystemLogger - 4 took 22
+2024-12-07 19:56:00 [Thread-5] INFO  TicketingSystemLogger - 1 took 21
+2024-12-07 19:56:00 [Thread-6] INFO  TicketingSystemLogger - 2 took 24
+2024-12-07 19:56:00 [Thread-7] INFO  TicketingSystemLogger - 3 took 25
+2024-12-07 19:56:00 [Thread-3] INFO  TicketingSystemLogger - 4 produced 31
+2024-12-07 19:56:00 [Thread-0] INFO  TicketingSystemLogger - 1 produced 33
+2024-12-07 19:56:00 [Thread-1] INFO  TicketingSystemLogger - 2 produced 32
+2024-12-07 19:56:00 [Thread-2] INFO  TicketingSystemLogger - 3 produced 35
+2024-12-07 19:56:00 [Thread-4] INFO  TicketingSystemLogger - 5 produced 34
+2024-12-07 19:56:00 [Thread-2] INFO  TicketingSystemLogger - 3 produced 36
+2024-12-07 19:56:00 [Thread-4] INFO  TicketingSystemLogger - 5 produced 37
+2024-12-07 19:56:00 [Thread-1] INFO  TicketingSystemLogger - 2 produced 38
+2024-12-07 19:56:00 [Thread-0] INFO  TicketingSystemLogger - 1 produced 39
+2024-12-07 19:56:00 [Thread-3] INFO  TicketingSystemLogger - 4 produced 40
+2024-12-07 19:56:01 [Thread-8] INFO  TicketingSystemLogger - 4 took 27
+2024-12-07 19:56:01 [Thread-5] INFO  TicketingSystemLogger - 1 took 30
+2024-12-07 19:56:01 [Thread-9] INFO  TicketingSystemLogger - 5 took 26
+2024-12-07 19:56:01 [Thread-7] INFO  TicketingSystemLogger - 3 took 29
+2024-12-07 19:56:01 [Thread-6] INFO  TicketingSystemLogger - 2 took 28
+2024-12-07 19:56:01 [Thread-3] INFO  TicketingSystemLogger - 4 produced 42
+2024-12-07 19:56:01 [Thread-2] INFO  TicketingSystemLogger - 3 produced 41
+2024-12-07 19:56:01 [Thread-0] INFO  TicketingSystemLogger - 1 produced 43
+2024-12-07 19:56:01 [Thread-4] INFO  TicketingSystemLogger - 5 produced 45
+2024-12-07 19:56:01 [Thread-1] INFO  TicketingSystemLogger - 2 produced 44
+2024-12-07 19:56:01 [Thread-8] INFO  TicketingSystemLogger - 4 took 33
+2024-12-07 19:56:01 [Thread-6] INFO  TicketingSystemLogger - 2 took 32
+2024-12-07 19:56:01 [Thread-9] INFO  TicketingSystemLogger - 5 took 34
+2024-12-07 19:56:01 [Thread-7] INFO  TicketingSystemLogger - 3 took 31
+2024-12-07 19:56:01 [Thread-5] INFO  TicketingSystemLogger - 1 took 35
+2024-12-07 19:56:01 [Thread-4] INFO  TicketingSystemLogger - 5 produced 49
+2024-12-07 19:56:01 [Thread-3] INFO  TicketingSystemLogger - 4 produced 47
+2024-12-07 19:56:01 [Thread-2] INFO  TicketingSystemLogger - 3 produced 50
+2024-12-07 19:56:01 [Thread-0] INFO  TicketingSystemLogger - 1 produced 48
+2024-12-07 19:56:01 [Thread-1] INFO  TicketingSystemLogger - 2 produced 46
+2024-12-07 19:56:02 [Thread-4] INFO  TicketingSystemLogger - 5 produced 51
+2024-12-07 19:56:02 [Thread-1] INFO  TicketingSystemLogger - 2 produced 55
+2024-12-07 19:56:02 [Thread-2] INFO  TicketingSystemLogger - 3 produced 53
+2024-12-07 19:56:02 [Thread-3] INFO  TicketingSystemLogger - 4 produced 54
+2024-12-07 19:56:02 [Thread-0] INFO  TicketingSystemLogger - 1 produced 52
+2024-12-07 19:56:02 [Thread-6] INFO  TicketingSystemLogger - 2 took 37
+2024-12-07 19:56:02 [Thread-8] INFO  TicketingSystemLogger - 4 took 36
+2024-12-07 19:56:02 [Thread-9] INFO  TicketingSystemLogger - 5 took 38
+2024-12-07 19:56:02 [Thread-7] INFO  TicketingSystemLogger - 3 took 39
+2024-12-07 19:56:02 [Thread-5] INFO  TicketingSystemLogger - 1 took 40
+2024-12-07 19:56:02 [Thread-1] INFO  TicketingSystemLogger - 2 produced 57
+2024-12-07 19:56:02 [Thread-3] INFO  TicketingSystemLogger - 4 produced 59
+2024-12-07 19:56:02 [Thread-0] INFO  TicketingSystemLogger - 1 produced 58
+2024-12-07 19:56:02 [Thread-2] INFO  TicketingSystemLogger - 3 produced 56
+2024-12-07 19:56:02 [Thread-4] INFO  TicketingSystemLogger - 5 produced 60
+2024-12-07 19:56:02 [Thread-9] INFO  TicketingSystemLogger - 5 took 43
+2024-12-07 19:56:02 [Thread-5] INFO  TicketingSystemLogger - 1 took 42
+2024-12-07 19:56:02 [Thread-7] INFO  TicketingSystemLogger - 3 took 41
+2024-12-07 19:56:02 [Thread-8] INFO  TicketingSystemLogger - 4 took 44
+2024-12-07 19:56:02 [Thread-6] INFO  TicketingSystemLogger - 2 took 45
+2024-12-07 19:56:02 [Thread-4] INFO  TicketingSystemLogger - 5 produced 62
+2024-12-07 19:56:02 [Thread-2] INFO  TicketingSystemLogger - 3 produced 61
+2024-12-07 19:56:02 [Thread-0] INFO  TicketingSystemLogger - 1 produced 64
+2024-12-07 19:56:02 [Thread-1] INFO  TicketingSystemLogger - 2 produced 63
+2024-12-07 19:56:02 [Thread-3] INFO  TicketingSystemLogger - 4 produced 65
+2024-12-07 19:56:03 [Thread-6] INFO  TicketingSystemLogger - 2 took 47
+2024-12-07 19:56:03 [Thread-2] INFO  TicketingSystemLogger - 3 produced 67
+2024-12-07 19:56:03 [Thread-1] INFO  TicketingSystemLogger - 2 produced 68
+2024-12-07 19:56:03 [Thread-3] INFO  TicketingSystemLogger - 4 produced 69
+2024-12-07 19:56:03 [Thread-7] INFO  TicketingSystemLogger - 3 took 49
+2024-12-07 19:56:03 [Thread-4] INFO  TicketingSystemLogger - 5 produced 66
+2024-12-07 19:56:03 [Thread-5] INFO  TicketingSystemLogger - 1 took 46
+2024-12-07 19:56:03 [Thread-8] INFO  TicketingSystemLogger - 4 took 48
+2024-12-07 19:56:03 [Thread-9] INFO  TicketingSystemLogger - 5 took 50
+2024-12-07 19:56:03 [Thread-0] INFO  TicketingSystemLogger - 1 produced 70
+2024-12-07 19:56:04 [Thread-1] INFO  TicketingSystemLogger - 2 produced 72
+2024-12-07 19:56:04 [Thread-6] INFO  TicketingSystemLogger - 2 took 51
+2024-12-07 19:56:04 [Thread-2] INFO  TicketingSystemLogger - 3 produced 71
+2024-12-07 19:56:04 [Thread-7] INFO  TicketingSystemLogger - 3 took 52
+2024-12-07 19:56:04 [Thread-9] INFO  TicketingSystemLogger - 5 took 54
+2024-12-07 19:56:04 [Thread-8] INFO  TicketingSystemLogger - 4 took 53
+2024-12-07 19:56:04 [Thread-4] INFO  TicketingSystemLogger - 5 produced 74
+2024-12-07 19:56:04 [Thread-3] INFO  TicketingSystemLogger - 4 produced 73
+2024-12-07 19:56:04 [Thread-5] INFO  TicketingSystemLogger - 1 took 55
+2024-12-07 19:56:04 [Thread-0] INFO  TicketingSystemLogger - 1 produced 75
+2024-12-07 19:56:04 [Thread-6] INFO  TicketingSystemLogger - 2 took 57
+2024-12-07 19:56:04 [Thread-0] INFO  TicketingSystemLogger - 1 produced 77
+2024-12-07 19:56:04 [Thread-4] INFO  TicketingSystemLogger - 5 produced 76
+2024-12-07 19:56:04 [Thread-7] INFO  TicketingSystemLogger - 3 took 56
+2024-12-07 19:56:04 [Thread-8] INFO  TicketingSystemLogger - 4 took 58
+2024-12-07 19:56:04 [Thread-5] INFO  TicketingSystemLogger - 1 took 59
+2024-12-07 19:56:04 [Thread-1] INFO  TicketingSystemLogger - 2 produced 79
+2024-12-07 19:56:04 [Thread-3] INFO  TicketingSystemLogger - 4 produced 78
+2024-12-07 19:56:04 [Thread-9] INFO  TicketingSystemLogger - 5 took 60
+2024-12-07 19:56:04 [Thread-2] INFO  TicketingSystemLogger - 3 produced 80
+2024-12-07 19:56:05 [Thread-4] INFO  TicketingSystemLogger - 5 produced 81
+2024-12-07 19:56:05 [Thread-0] INFO  TicketingSystemLogger - 1 produced 82
+2024-12-07 19:56:05 [Thread-6] INFO  TicketingSystemLogger - 2 took 62
+2024-12-07 19:56:05 [Thread-7] INFO  TicketingSystemLogger - 3 took 61
+2024-12-07 19:56:05 [Thread-3] INFO  TicketingSystemLogger - 4 produced 83
+2024-12-07 19:56:05 [Thread-8] INFO  TicketingSystemLogger - 4 took 63
+2024-12-07 19:56:05 [Thread-2] INFO  TicketingSystemLogger - 3 produced 84
+2024-12-07 19:56:05 [Thread-5] INFO  TicketingSystemLogger - 1 took 64
+2024-12-07 19:56:05 [Thread-1] INFO  TicketingSystemLogger - 2 produced 85
+2024-12-07 19:56:05 [Thread-9] INFO  TicketingSystemLogger - 5 took 65
+2024-12-07 19:56:05 [Thread-3] INFO  TicketingSystemLogger - 4 produced 87
+2024-12-07 19:56:05 [Thread-4] INFO  TicketingSystemLogger - 5 produced 86
+2024-12-07 19:56:05 [Thread-0] INFO  TicketingSystemLogger - 1 produced 89
+2024-12-07 19:56:05 [Thread-7] INFO  TicketingSystemLogger - 3 took 66
+2024-12-07 19:56:05 [Thread-5] INFO  TicketingSystemLogger - 1 took 69
+2024-12-07 19:56:05 [Thread-6] INFO  TicketingSystemLogger - 2 took 68
+2024-12-07 19:56:05 [Thread-8] INFO  TicketingSystemLogger - 4 took 67
+2024-12-07 19:56:05 [Thread-2] INFO  TicketingSystemLogger - 3 produced 88
+2024-12-07 19:56:06 [Thread-9] INFO  TicketingSystemLogger - 5 took 70
+2024-12-07 19:56:06 [Thread-1] INFO  TicketingSystemLogger - 2 produced 90
+2024-12-07 19:56:06 [Thread-3] INFO  TicketingSystemLogger - 4 produced 91
+2024-12-07 19:56:06 [Thread-7] INFO  TicketingSystemLogger - 3 took 71
+2024-12-07 19:56:06 [Thread-4] INFO  TicketingSystemLogger - 5 produced 93
+2024-12-07 19:56:06 [Thread-5] INFO  TicketingSystemLogger - 1 took 72
+2024-12-07 19:56:06 [Thread-2] INFO  TicketingSystemLogger - 3 produced 92
+2024-12-07 19:56:06 [Thread-8] INFO  TicketingSystemLogger - 4 took 73
+2024-12-07 19:56:06 [Thread-0] INFO  TicketingSystemLogger - 1 produced 94
+2024-12-07 19:56:06 [Thread-6] INFO  TicketingSystemLogger - 2 took 74
+2024-12-07 19:56:06 [Thread-9] INFO  TicketingSystemLogger - 5 took 75
+2024-12-07 19:56:06 [Thread-1] INFO  TicketingSystemLogger - 2 produced 95
+2024-12-07 19:56:07 [Thread-5] INFO  TicketingSystemLogger - 1 took 77
+2024-12-07 19:56:07 [Thread-3] INFO  TicketingSystemLogger - 4 produced 96
+2024-12-07 19:56:07 [Thread-4] INFO  TicketingSystemLogger - 5 produced 97
+2024-12-07 19:56:07 [Thread-6] INFO  TicketingSystemLogger - 2 took 76
+2024-12-07 19:56:07 [Thread-2] INFO  TicketingSystemLogger - 3 produced 99
+2024-12-07 19:56:07 [Thread-0] INFO  TicketingSystemLogger - 1 produced 98
+2024-12-07 19:56:07 [Thread-8] INFO  TicketingSystemLogger - 4 took 79
+2024-12-07 19:56:07 [Thread-7] INFO  TicketingSystemLogger - 3 took 78
+2024-12-07 19:56:07 [Thread-1] INFO  TicketingSystemLogger - 2 produced 100
+2024-12-07 19:56:07 [Thread-9] INFO  TicketingSystemLogger - 5 took 80
+2024-12-07 19:56:07 [Thread-0] INFO  TicketingSystemLogger - Vendor 1 has stopped producing. Ticket limit reached.
+2024-12-07 19:56:07 [Thread-3] INFO  TicketingSystemLogger - Vendor 4 has stopped producing. Ticket limit reached.
+2024-12-07 19:56:07 [Thread-4] INFO  TicketingSystemLogger - Vendor 5 has stopped producing. Ticket limit reached.
+2024-12-07 19:56:07 [Thread-2] INFO  TicketingSystemLogger - Vendor 3 has stopped producing. Ticket limit reached.
+2024-12-07 19:56:07 [Thread-1] INFO  TicketingSystemLogger - Vendor 2 has stopped producing. Ticket limit reached.
+2024-12-07 19:56:07 [Thread-8] INFO  TicketingSystemLogger - 4 took 83
+2024-12-07 19:56:07 [Thread-5] INFO  TicketingSystemLogger - 1 took 84
+2024-12-07 19:56:07 [Thread-6] INFO  TicketingSystemLogger - 2 took 81
+2024-12-07 19:56:07 [Thread-7] INFO  TicketingSystemLogger - 3 took 82
+2024-12-07 19:56:07 [Thread-9] INFO  TicketingSystemLogger - 5 took 85
+2024-12-07 19:56:08 [Thread-8] INFO  TicketingSystemLogger - 4 took 89
+2024-12-07 19:56:08 [Thread-7] INFO  TicketingSystemLogger - 3 took 86
+2024-12-07 19:56:08 [Thread-5] INFO  TicketingSystemLogger - 1 took 88
+2024-12-07 19:56:08 [Thread-6] INFO  TicketingSystemLogger - 2 took 87
+2024-12-07 19:56:08 [Thread-9] INFO  TicketingSystemLogger - 5 took 90
+2024-12-07 19:56:09 [Thread-8] INFO  TicketingSystemLogger - 4 took 91
+2024-12-07 19:56:09 [Thread-7] INFO  TicketingSystemLogger - 3 took 92
+2024-12-07 19:56:09 [Thread-6] INFO  TicketingSystemLogger - 2 took 94
+2024-12-07 19:56:09 [Thread-5] INFO  TicketingSystemLogger - 1 took 93
+2024-12-07 19:56:09 [Thread-9] INFO  TicketingSystemLogger - 5 took 95
+2024-12-07 19:56:09 [Thread-5] INFO  TicketingSystemLogger - 1 took 97
+2024-12-07 19:56:09 [Thread-6] INFO  TicketingSystemLogger - 2 took 96
+2024-12-07 19:56:09 [Thread-8] INFO  TicketingSystemLogger - 4 took 98
+2024-12-07 19:56:09 [Thread-7] INFO  TicketingSystemLogger - 3 took 99
+2024-12-07 19:56:09 [Thread-9] INFO  TicketingSystemLogger - 5 took 100
+2024-12-08 00:10:13 [main] INFO  TicketingSystemLogger - 
+=================================================
+| Welcome to the Realtime Ticket Booking System |
+=================================================
+2024-12-08 00:10:13 [main] INFO  TicketingSystemLogger - 1. Start Process
+2024-12-08 00:10:13 [main] INFO  TicketingSystemLogger - 2. Stop Process
+2024-12-08 00:10:13 [main] INFO  TicketingSystemLogger - 3. Setup Configurations
+2024-12-08 00:10:13 [main] INFO  TicketingSystemLogger - 4. Exit
+2024-12-08 00:10:13 [main] INFO  TicketingSystemLogger - Please choose an option (1-4): 

@@ -3,7 +3,8 @@ package org.w1959883.ticketing_system.services;
 import com.w1959883.models.Configuration;
 import org.springframework.stereotype.Service;
 import org.w1959883.ticketing_system.mappers.ConfigMapper;
-import org.w1959883.ticketing_system.models.ConfigurationEntity;
+import org.w1959883.ticketing_system.models.Config;
+import org.w1959883.ticketing_system.models.ConfigurationStatus;
 import org.w1959883.ticketing_system.repositories.ConfigRepository;
 
 import java.util.List;
@@ -22,24 +23,25 @@ public class ConfigService
 
     public void addConfig( Configuration configDto )
     {
-        ConfigurationEntity config = configMapper.toConfig( configDto );
+        Config config = configMapper.toConfig( configDto );
+        config.setStatus( ConfigurationStatus.QUEUED );
         configRepository.save( config );
     }
 
-    public List<ConfigurationEntity> getAllConfigs()
+    public List<Config> getAllConfigs()
     {
         return configRepository.findAll();
     }
 
-    public Optional<ConfigurationEntity> getConfigById( Integer configurationId )
+    public Optional<Config> getConfigById( Integer configurationId )
     {
         return configRepository.findById( configurationId );
     }
 
 
-    public ConfigurationEntity updateConfig( Configuration configuration )
+    public Config updateConfig( Configuration configuration )
     {
-        ConfigurationEntity config = configMapper.toConfig( configuration );
+        Config config = configMapper.toConfig( configuration );
         return configRepository.save( config );
     }
 
