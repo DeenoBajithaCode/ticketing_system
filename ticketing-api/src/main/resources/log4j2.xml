@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Configuration status="WARN">
+<Configuration status="WARN" monitorInterval="30">
     <Appenders>
         <!-- Console Appender -->
         <Console name="Console" target="SYSTEM_OUT">
@@ -7,15 +7,16 @@
         </Console>
 
         <!-- File Appender -->
-        <File name="File" fileName="logs/app.log">
+        <File name="File" fileName="logs/app.log" append="true">
             <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger{36} - %msg%n" />
         </File>
 
         <!-- WebSocket Appender -->
-        <Appender name="WebSocketAppender" type="WebSocketLogAppender">
-            <!-- No additional configurations needed for this custom appender -->
+        <Appender type="Console" name="WebSocketAppender" class="com.yourpackage.logging.WebSocketLogAppender">
+            <!-- No additional configuration is needed; logs are broadcasted via the WebSocketLogAppender class -->
         </Appender>
     </Appenders>
+
     <Loggers>
         <Root level="info">
             <AppenderRef ref="Console" />

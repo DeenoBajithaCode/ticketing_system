@@ -100,4 +100,12 @@ public class ProcessManager {
 
         logger.info("Process has stopped.");
     }
+
+    // Getter for TicketCounter
+    public TicketCounter getTicketCounter() {
+        if (ticketCounter == null) {
+            throw new IllegalStateException("TicketCounter is not initialized. Start the process first.");
+        }
+        return ticketCounter;
+    }
 }
