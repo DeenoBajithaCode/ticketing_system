@@ -38,15 +38,16 @@ public class Vendor implements Runnable {
 
                 Ticket ticket = new Ticket();
                 ticket.setTicketId( ticketNumber );
+
                 ticket.setVendorId( vendorId );
                 ticketPool.addTickets( ticket );
-                logger.info( vendorId + " produced " + ticketNumber );
+                logger.info( "Vendor : "+ vendorId + " produced " + "Ticket :" +ticket.getTicketId() );
                 // Simulate production time
                 Thread.sleep(productionTime);
             }
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
-            logger.error( "Vendor : " + vendorId +  "interrupted" );
+            logger.error( "Vendor : " + vendorId +  " interrupted" );
         }
     }
 }

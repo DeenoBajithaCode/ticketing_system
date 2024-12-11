@@ -22,13 +22,13 @@ public class Customer implements Runnable {
             while (true) {
                 Ticket ticket =  ticketPool.purchaseTicket();
                 ticket.setCustomerId( customerId );
-                logger.info(  customerId + " took " + ticket.getTicketId() );
+                logger.info( "Customer : "+ customerId + " took " + "Ticket :" +ticket.getTicketId() );
                 //simulates selling time
                 Thread.sleep(sellingTime);
             }
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
-            logger.error( "Customer : " + customerId + "got interrupted" );
+            logger.error( "Customer : " + customerId + " got interrupted" );
         }
     }
 }
