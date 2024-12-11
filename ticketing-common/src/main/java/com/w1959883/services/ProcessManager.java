@@ -10,10 +10,8 @@ import org.apache.logging.log4j.Logger;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.ArrayBlockingQueue;
 
-public class ProcessManager
-{
+public class ProcessManager {
     private static final Logger logger = TicketingLogger.getLogger();
     private static final ProcessManager instance = new ProcessManager();
     private static TicketPool ticketsPool;
@@ -39,7 +37,6 @@ public class ProcessManager
             return;
         }
         setupProcess(configuration);
-
         running = true;
 
         // Vendor Threads
@@ -61,9 +58,7 @@ public class ProcessManager
         logger.info("Process has Started.");
     }
 
-
-    private void setupProcess( Configuration configuration )
-    {
+    private void setupProcess(Configuration configuration) {
         assert configuration != null;
         ticketsPool = new TicketPool(configuration.getMaximumTicketCapacity());
         ticketCounter = new TicketCounter(configuration.getTotalNumberOfTickets());
@@ -71,16 +66,13 @@ public class ProcessManager
         sellingTime = calculateSellingTime(configuration.getCustomerRetrievalRate());
     }
 
-    private Long calculateSellingTime( Double customerRetrievalRate )
-    {
-        return ( long ) ((1000*customerRetrievalRate)/5);
+    private Long calculateSellingTime(Double customerRetrievalRate) {
+        return (long) ((1000 * customerRetrievalRate) / 5);
     }
 
-    private Long calculateProductionTime( Double ticketReleaseRate )
-    {
-        return ( long ) ((1000*ticketReleaseRate)/5);
+    private Long calculateProductionTime(Double ticketReleaseRate) {
+        return (long) ((1000 * ticketReleaseRate) / 5);
     }
-
 
     public synchronized void stop() {
         if (!running) {
@@ -103,7 +95,9 @@ public class ProcessManager
             }
         }
 
+        vendorThreads.clear();
+        customerThreads.clear();
+
         logger.info("Process has stopped.");
     }
 }
-
