@@ -18,11 +18,12 @@ public class ConfigController {
     }
 
     @PostMapping("/add")
-    public void addConfig(@RequestBody Configuration config) {
+    public String addConfig(@RequestBody Configuration config) {
         if (config == null) {
             throw new IllegalArgumentException("Configuration object cannot be null");
         }
         configService.addConfig(config);
+        return "Configurations Added Successfully";
     }
 
     @GetMapping

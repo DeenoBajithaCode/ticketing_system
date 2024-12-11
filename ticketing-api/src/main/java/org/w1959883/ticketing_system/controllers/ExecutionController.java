@@ -18,10 +18,11 @@ public class ExecutionController {
     }
 
     @PostMapping("/execution")
-    public void setProjectStatus(@RequestBody(required = false) Boolean executionRequest) {
+    public String setProjectStatus(@RequestBody(required = false) Boolean executionRequest) {
         if (executionRequest == null) {
             throw new BadRequestException("Execution request cannot be null");
         }
         executionService.setExecution(executionRequest);
+        return "Execution has setup";
     }
 }
