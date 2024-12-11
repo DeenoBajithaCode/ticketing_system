@@ -8,6 +8,8 @@ import com.w1959883.util.TicketPool;
 import com.w1959883.util.TicketingLogger;
 import org.apache.logging.log4j.Logger;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.ArrayBlockingQueue;
 
 public class ProcessManager
@@ -18,18 +20,9 @@ public class ProcessManager
     private TicketCounter ticketCounter;
     private Long productionTime;
     private Long sellingTime;
+    private List<Thread> vendorThreads = new ArrayList<>();
+    private List<Thread> customerThreads = new ArrayList<>();
 
-    private Thread vendorThreadOne;
-    private Thread vendorThreadTwo;
-    private Thread vendorThreadThree;
-    private Thread vendorThreadFour;
-    private Thread vendorThreadFive;
-
-    private Thread customerThreadOne;
-    private Thread customerThreadTwo;
-    private Thread customerThreadThree;
-    private Thread customerThreadFour;
-    private Thread customerThreadFive;
     private volatile boolean running = false;
 
     private ProcessManager() {
@@ -40,44 +33,34 @@ public class ProcessManager
         return instance;
     }
 
-    public synchronized void start( Configuration configuration ) {
+    public synchronized void start(Configuration configuration) {
         if (running) {
-            logger.info( "Process is already running." );
+            logger.info("Process is already running.");
             return;
         }
-        setupProcess( configuration );
+        setupProcess(configuration);
 
         running = true;
-        //Vendor Threads
-        vendorThreadOne = new Thread(new Vendor( ticketsPool, 1, ticketCounter, productionTime ));
-        vendorThreadTwo = new Thread(new Vendor( ticketsPool, 2, ticketCounter, productionTime ));
-        vendorThreadThree = new Thread(new Vendor( ticketsPool, 3, ticketCounter, productionTime ));
-        vendorThreadFour = new Thread(new Vendor( ticketsPool, 4, ticketCounter, productionTime ));
-        vendorThreadFive = new Thread(new Vendor( ticketsPool, 5, ticketCounter, productionTime ));
 
-        //Customer Threads
-        customerThreadOne = new Thread(new Customer( ticketsPool, 1, sellingTime ));
-        customerThreadTwo = new Thread(new Customer( ticketsPool, 2, sellingTime ));
-        customerThreadThree = new Thread(new Customer( ticketsPool, 3, sellingTime ));
-        customerThreadFour = new Thread(new Customer( ticketsPool, 4, sellingTime ));
-        customerThreadFive = new Thread(new Customer( ticketsPool, 5, sellingTime ));
+        // Vendor Threads
+        int numberOfVendors = 5;
+        for (int i = 1; i <= numberOfVendors; i++) {
+            Thread vendorThread = new Thread(new Vendor(ticketsPool, i, ticketCounter, productionTime));
+            vendorThreads.add(vendorThread);
+            vendorThread.start();
+        }
 
-        //Selling Start
-        vendorThreadOne.start();
-        vendorThreadTwo.start();
-        vendorThreadThree.start();
-        vendorThreadFour.start();
-        vendorThreadFive.start();
+        // Customer Threads
+        int numberOfCustomers = 5;
+        for (int i = 1; i <= numberOfCustomers; i++) {
+            Thread customerThread = new Thread(new Customer(ticketsPool, i, sellingTime));
+            customerThreads.add(customerThread);
+            customerThread.start();
+        }
 
-        //Buying Start
-        customerThreadOne.start();
-        customerThreadTwo.start();
-        customerThreadThree.start();
-        customerThreadFour.start();
-        customerThreadFive.start();
-
-        logger.info( "Process has Started." );
+        logger.info("Process has Started.");
     }
+
 
     private void setupProcess( Configuration configuration )
     {
@@ -98,19 +81,29 @@ public class ProcessManager
         return ( long ) ((1000*ticketReleaseRate)/5);
     }
 
+
     public synchronized void stop() {
         if (!running) {
-            logger.info( "Process is not running." );
+            logger.info("Process is not running.");
             return;
         }
 
-        // Initialize TicketCounter with the maximum ticket limit
-        ticketCounter = new TicketCounter(1000);
-
         running = false;
-        vendorThreadOne.interrupt();
-        customerThreadOne.interrupt();
-        logger.info( "Process has stopped." );
+
+        // Interrupt vendor threads
+        for (Thread thread : vendorThreads) {
+            if (thread != null && thread.isAlive()) {
+                thread.interrupt();
+            }
+        }
+        // Interrupt customer threads
+        for (Thread thread : customerThreads) {
+            if (thread != null && thread.isAlive()) {
+                thread.interrupt();
+            }
+        }
+
+        logger.info("Process has stopped.");
     }
 }
 

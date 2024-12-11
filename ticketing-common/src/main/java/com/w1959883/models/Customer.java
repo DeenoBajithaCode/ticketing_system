@@ -28,7 +28,7 @@ public class Customer implements Runnable {
             }
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
-            logger.error( "Customer " + customerId + "got interrupted" );
+            logger.error( "Customer : " + customerId + "got interrupted" );
         }
     }
 }
